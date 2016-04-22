@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="programtable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="programRow" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="programRow">
+        <xs:complexType>
+            <xs:sequence>
+        <xs:element type="xs:string" name="Campus"/>
+        <xs:element type="xs:string" name="Program_Name"/>
+        <xs:element type="xs:string" name="Degree_Level"/>
+        <xs:element type="xs:string" name="Degree"/>
+        <xs:element type="xs:string" name="UNC_PK"/>
+        <xs:element type="xs:string" name="Online_Percent"/>
+        <xs:element type="xs:string" name="Program_Description"/>
+        <xs:element type="xs:string" name="Prereq_Degree"/>
+        <xs:element type="xs:string" name="Exams"/>
+        <xs:element type="xs:string" name="Minimum_GPA"/>
+        <xs:element type="xs:string" name="Credit_Hours"/>
+        <xs:element type="xs:string" name="Average_Resident_Cost"/>
+        <xs:element type="xs:string" name="Res_CPC"/>
+        <xs:element type="xs:string" name="Average_Non_Resident_Cost"/>
+        <xs:element type="xs:string" name="Non_Res_CPC"/>
+        <xs:element type="xs:string" name="Subject"/>
+        <xs:element type="xs:string" name="Duration"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
